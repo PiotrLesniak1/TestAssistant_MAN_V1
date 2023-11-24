@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSetting>
+		<terminalConfig>
+			<add key="BootPort" value ="23" />
+			<add key="MainPort" value ="21"/>
+		</terminalConfig>
+		
+		<Communication_Mode>	AUTO	</Communication_Mode>
+		<PowerMode>				MANUAL	</PowerMode>
+			
+		
+	</appSetting>
+</configuration>

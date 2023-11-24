@@ -1,0 +1,25 @@
+﻿<Window x:Class="TestAssistant.Dialog.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestAssistant.Dialog"
+        mc:Ignorable="d"
+        Title="MessageBoxPower" Height="200" Width="400">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Message TextBox -->
+        <TextBox Name="MainMessage" HorizontalAlignment="Left" Height="79" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="372" Background="White" IsReadOnly="True" />
+
+        <!-- Button Container -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+           <Button Name="LeftButton" Height="35" Content="" Click="LeftButton_Pressed" Background="White" BorderBrush="Black" HorizontalAlignment="Left" Width="100" Margin="0,0,20,0" Foreground="Black" />
+            <Button Name="MiddleButton" Height="35" Content="" Click="MiddleButton_Pressed" Background="White" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="100" Margin="0,0,20,0" Foreground="Black"/>
+            <Button x:Name="RightButton" Height="35" Content="" Click="RightButton_Pressed" Background="White" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="100" Margin=" 0,0,0,0" Foreground="Black"/>
+        </StackPanel>
+    </Grid>
+</Window>
